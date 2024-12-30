@@ -1,37 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
     <style>
-        /* CSS to center the content */
         body {
-            text-align: center; /* This will center the text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px; /* Set the width of the image */
-            border-radius: 10px; /* Optional: For rounded corners */
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #ccc;
+            margin-top: 10px;
+        }
+        section {
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%; /* Ensure images resize to fit the container */
+            max-width: 600px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .image-container p {
+            text-align: left;
+            margin: 10px 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website!</h1>
-    <p>Hello! My name is <b>MURTHY</b>. Here's a little about me:</p> 
-    <p>I am currently pursuing B-Tech in GVPCE-(A) Vskp in CSE.</p>
-    
-    <p>Here are some of my hobbies:</p>
-    <ul>
-        <li>Listening to music</li>
-        <li>Playing games</li>
-        <li>Watching TV</li>
-    </ul>
-    
-    <!-- Add your image here -->
-    <img src="https://github.com/gantamurthy/Murthy.github.io/blob/main/f3dea026-ec51-4146-8a57-372a86b683df.jpg?raw=true" alt="Photo of murthy" /> 
-    
-    <p>This is a photo of mine!</p>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <img src="" alt="My Photo">
+        <p>This is a photo of mine! I live in Rajahmundry.</p>
+    </header>
+    <section>
+        <h2>Gallery</h2>
+        <p>Here is a small description about my city Rajahmundry is a city in Andhra Pradesh, located on the Godavari River. Known as the "Cultural Capital" of the state, it is famous for its history, temples, and scenic beauty. The city is a key commercial hub and a gateway to the Eastern Ghats.
+. Explore some of the amazing photos below.</p>
+        <div class="image-container">
+            <img src="" alt="iskon">
+            <p>Description: The ISKCON Temple in Rajahmundry is a serene spiritual center dedicated to Lord Krishna, offering daily prayers, kirtans, and cultural events. It is a popular place for devotees seeking peace and devotion.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="" alt=" Dowleswaram Barrage">
+            <p>Description: The Dowleswaram Barrage, located near Rajahmundry on the Godavari River, is an important irrigation and flood control structure. It helps in managing the flow of water for agriculture in the region and ensures water supply to surrounding areas. The barrage is a key landmark and plays a vital role in the local economy and agriculture.
+
+
+
+.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="" alt="Submarine Museum">
+            <p>Description: The Godavari Bridge in Rajahmundry is a prominent structure spanning the Godavari River. It connects the city to Kovvur and serves as a vital transportation link. The bridge is an engineering marvel and offers scenic views of the river, making it a significant landmark and a symbol of the city's connectivity and growth. It plays a crucial role in both daily commutes and regional trade.
+
+
+
+.</p>
+        </div>
+    </section>
 </body>
 </html>
